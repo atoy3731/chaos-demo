@@ -15,6 +15,7 @@ helm:
       className: "traefik"
     deployment:
       image:
+        repository: harbor.atoy.dev/public/kubeinvaders
         tag: v1.9.6
     config:
       target_namespace: "namespace1,namespace2"
