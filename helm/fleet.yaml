@@ -12,6 +12,7 @@ helm:
     ingress:
       enabled: true
       hostName: chaos.kube.lol
+      className: "traefik"
     deployment:
       image:
         tag: v1.9.6
