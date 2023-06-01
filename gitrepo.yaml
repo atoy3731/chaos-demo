@@ -1,0 +1,13 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: chaos
+  namespace: fleet-default
+spec:
+  repo: https://github.com/atoy3731/chaos-demo.git
+  branch: main
+  targets:
+  - name: chaos
+    clusterGroup: chaos
+  paths:
+  - "./helm

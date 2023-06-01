@@ -1,0 +1,19 @@
+defaultNamespace: kubeinvaders
+
+labels:
+  app: chaos
+
+helm:
+  repo:  https://lucky-sideburn.github.io/helm-charts/
+  chart: kubeinvaders
+  version: 1.9.6
+  releaseName: kubeinvaders
+  values:
+    ingress:
+      enabled: true
+      hostname: chaos.kube.lol
+    deployment:
+      image:
+        tag: v1.9.6
+    config:
+      target_namespace: "namespace1,namespace2"
