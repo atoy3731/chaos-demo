@@ -10,4 +10,4 @@ spec:
   - name: chaos
     clusterGroup: chaos
   paths:
-  - "./helm
+  - "./helm"
