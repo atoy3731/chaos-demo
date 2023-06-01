@@ -11,7 +11,7 @@ helm:
   values:
     ingress:
       enabled: true
-      hostname: chaos.kube.lol
+      hostName: chaos.kube.lol
     deployment:
       image:
         tag: v1.9.6
