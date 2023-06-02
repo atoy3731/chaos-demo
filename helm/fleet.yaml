@@ -15,6 +15,7 @@ helm:
       className: "traefik"
       secretName: kube-lol
     deployment:
+      replicaCount: 3
       image:
         repository: harbor.atoy.dev/public/kubeinvaders
         tag: v1.9.6
