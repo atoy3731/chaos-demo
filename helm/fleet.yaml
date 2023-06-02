@@ -13,6 +13,10 @@ helm:
       enabled: true
       hostName: chaos.kube.lol
       className: "traefik"
+      tls:
+      - hosts:
+          - chaos.kube.lol
+        secretName: kube-lol
     deployment:
       image:
         repository: harbor.atoy.dev/public/kubeinvaders
