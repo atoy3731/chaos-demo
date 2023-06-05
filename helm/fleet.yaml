@@ -20,4 +20,4 @@ helm:
         repository: harbor.atoy.dev/public/kubeinvaders
         tag: v1.9.6
     config:
-      target_namespace: "namespace1,namespace2"
+      target_namespace: "demo-namespace,kubeinvaders"
